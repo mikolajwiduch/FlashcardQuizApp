@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33e9eb87-9368-4a79-b69e-3e7403112f09" name="Changes" comment="project files">
-      <change afterPath="$PROJECT_DIR$/DatabaseManager.py" afterDir="false" />
+    <list default="true" id="33e9eb87-9368-4a79-b69e-3e7403112f09" name="Changes" comment="database class">
+      <change afterPath="$PROJECT_DIR$/FlashcardManager.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -48,6 +48,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.DatabaseManager.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "settings.editor.selected.configurable": "CodeWithMe"
@@ -77,7 +78,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728075252744</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="database class">
+      <option name="closed" value="true" />
+      <created>1728077655137</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1728077655137</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -93,6 +102,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="project files" />
-    <option name="LAST_COMMIT_MESSAGE" value="project files" />
+    <MESSAGE value="database class" />
+    <option name="LAST_COMMIT_MESSAGE" value="database class" />
   </component>
 </project>
