@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33e9eb87-9368-4a79-b69e-3e7403112f09" name="Changes" comment="flashcard class">
-      <change afterPath="$PROJECT_DIR$/FlashcardApp.py" afterDir="false" />
+    <list default="true" id="33e9eb87-9368-4a79-b69e-3e7403112f09" name="Changes" comment="FlashcardApp class - unfinished, unresolved attribute references">
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DatabaseManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/DatabaseManager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardApp.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardApp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardManager.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,24 +26,24 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "mikolajwiduch"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;mikolajwiduch&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/mikolajwiduch/FlashcardQuizApp",
-    "accountId": "e40292bf-049e-4e32-831c-6d5b8ee19872"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/mikolajwiduch/FlashcardQuizApp&quot;,
+    &quot;accountId&quot;: &quot;e40292bf-049e-4e32-831c-6d5b8ee19872&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2mzL7kwNtgqYBD2cRNlBQZ23Ypg" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -52,6 +55,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.DatabaseManager.executor": "Run",
+    "Python.FlashcardApp.executor": "Run",
+    "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "settings.editor.selected.configurable": "CodeWithMe"
@@ -97,7 +102,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728080679687</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="FlashcardApp class - unfinished, unresolved attribute references">
+      <option name="closed" value="true" />
+      <created>1728085446496</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1728085446496</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -115,6 +128,7 @@
     <MESSAGE value="project files" />
     <MESSAGE value="database class" />
     <MESSAGE value="flashcard class" />
-    <option name="LAST_COMMIT_MESSAGE" value="flashcard class" />
+    <MESSAGE value="FlashcardApp class - unfinished, unresolved attribute references" />
+    <option name="LAST_COMMIT_MESSAGE" value="FlashcardApp class - unfinished, unresolved attribute references" />
   </component>
 </project>

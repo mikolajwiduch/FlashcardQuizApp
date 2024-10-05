@@ -7,12 +7,12 @@ class FlashcardManager:
         self.db_manager.add_quiz(quiz_name)
 
     def select_quiz(self, quiz_name):
-        quizzes = self.db_manager.get_guizzes()
+        quizzes = self.db_manager.get_quizzes()
         for quiz in quizzes:
             if quiz[1] == quiz_name:
                 self.selected_quiz_id = quiz[0]
                 return True
-            return False
+        return False
 
     def add_flashcard(self, question, answer):
         if self.selected_quiz_id:
@@ -20,7 +20,7 @@ class FlashcardManager:
         else:
             raise ValueError("No quiz selected!")
 
-    def get_flashcard_for_quiz(self):
+    def get_flashcards_for_quiz(self):
         if self.selected_quiz_id:
             return self.db_manager.get_flashcards(self.selected_quiz_id)
         else:

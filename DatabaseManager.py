@@ -17,12 +17,12 @@ class DatabaseManager:
 
         # Create the flashcards table
         c.execute('''CREATE TABLE IF NOT EXISTS flashcards (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        question TEXT NOT NULL,
-        answer TEXT NOT NULL,
-        answered_correctly BOOLEAN DEFAULT 0,
-        quiz_id INTEGER NOT NULL,
-        FOREIGN KEY (quiz_id) REFERENCES quizzes(id) ''')
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    question TEXT NOT NULL,
+                    answer TEXT NOT NULL,
+                    answered_correctly BOOLEAN DEFAULT 0,
+                    quiz_id INTEGER NOT NULL,
+                    FOREIGN KEY (quiz_id) REFERENCES quizzes(id))''')
 
         conn.commit()
         conn.close()
@@ -58,6 +58,9 @@ class DatabaseManager:
         c = conn.cursor()
         c.execute("SELECT id, question, answer, answered_correctly FROM flashcards WHERE answered_correctly = 0 AND "
                   "quiz_id = ?", (quiz_id,))
+        flashcards = c.fetchall()
+        conn.close()
+        return flashcards
 
     def mark_as_answered(self, card_id):
         conn = sqlite3.connect(self.db_name)
