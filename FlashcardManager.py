@@ -14,15 +14,15 @@ class FlashcardManager:
                 return True
         return False
 
-    def add_flashcard(self, question, answer):
-        if self.selected_quiz_id:
-            self.db_manager.add_flashcard(question, answer, self.selected_quiz_id)
-        else:
-            raise ValueError("No quiz selected!")
-
     def get_flashcards_for_quiz(self):
         if self.selected_quiz_id:
             return self.db_manager.get_flashcards(self.selected_quiz_id)
+        else:
+            raise ValueError("No quiz selected!")
+
+    def add_flashcard(self, question, answer):
+        if self.selected_quiz_id:
+            self.db_manager.add_flashcard(question, answer, self.selected_quiz_id)
         else:
             raise ValueError("No quiz selected!")
 

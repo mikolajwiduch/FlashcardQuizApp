@@ -36,6 +36,10 @@ class MainFrame(tk.Frame):
 
         self.load_quizzes()
 
+        # Go to quiz button
+        go_to_quiz_button = tk.Button(self, text="Go to Quiz", command=self.go_to_quiz)
+        go_to_quiz_button.grid(row=3, column=0, columnspan=3)
+
     def create_quiz(self):
         quiz_name = self.quiz_entry.get().strip()
         if quiz_name:
@@ -51,21 +55,10 @@ class MainFrame(tk.Frame):
         for quiz in quizzes:
             self.quiz_listbox.insert(tk.END, quiz[1])
 
-        # Go to quiz button
-        self.update_quiz_buttons()
-
-    def update_quiz_buttons(self):
-        if self.go_to_quiz_buttons:
-            for button in self.go_to_quiz_buttons:
-                button.destroy()  # Destroy previous buttons
-
-        self.go_to_quiz_buttons = []
-        for i in range(self.quiz_listbox.size()):
-            go_to_quiz_button = tk.Button(self, text="Go to Quiz",
-                                          command=lambda idx=i: self.go_to_quiz(idx))
-            go_to_quiz_button.grid(row=2 + i, column=2)
-            self.go_to_quiz_buttons.append(go_to_quiz_button)
-
-    def go_to_quiz(self, index):
-        selected_quiz = self.quiz_listbox.get(index)
-        self.switch_frame_callback('quiz', selected_quiz)
+    def go_to_quiz(self):
+        selected_index = self.quiz_listbox.curselection()
+        if selected_index:
+            selected_quiz = self.quiz_listbox.get(selected_index)
+            self.switch_frame_callback('quiz', selected_quiz)
+        else:
+            messagebox.showwarning("Selection Error", "Please select a quiz first.")
