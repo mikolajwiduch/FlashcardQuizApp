@@ -52,6 +52,5 @@ class QuizFrame(tk.Frame):
         self.switch_frame_callback('main')
 
     def show_question(self):
-        # Logic to display questions and handle the quiz
         question_display = tk.Label(self, text=f"First question: {self.flashcards[0][1]}")
         question_display.pack()

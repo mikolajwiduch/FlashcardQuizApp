@@ -28,3 +28,17 @@ class FlashcardManager:
 
     def mark_flashcard_answered(self, card_id):
         self.db_manager.mark_as_answered(card_id)
+
+    def delete_flashcard(self, card_id):
+        self.db_manager.delete_flashcard(card_id)
+
+    def edit_flashcard(self, card_id, new_question, new_answer):
+        self.db_manager.edit_flashcard(card_id, new_question, new_answer)
+
+    def delete_quiz(self):
+        if self.selected_quiz_id:
+            self.db_manager.delete_quiz(self.selected_quiz_id)
+
+    def edit_quiz_name(self, new_name):
+        if self.selected_quiz_id:
+            self.db_manager.edit_quiz_name(self.selected_quiz_id, new_name)
