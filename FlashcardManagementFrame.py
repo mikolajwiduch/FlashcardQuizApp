@@ -78,6 +78,7 @@ class FlashcardManagementFrame(tk.Frame):
         if new_name:
             self.flashcard_manager.edit_quiz_name(new_name)
             messagebox.showinfo("Success", "Quiz name updated!")
+            self.switch_frame_callback('quiz', new_name)
         else:
             messagebox.showwarning("Input Error", "Please enter a new quiz name.")
 

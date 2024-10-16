@@ -4,6 +4,7 @@ from tkinter import messagebox
 
 class MainFrame(tk.Frame):
     def __init__(self, parent, flashcard_manager, switch_frame_callback):
+        self.parent = parent
         super().__init__(parent)
         self.flashcard_manager = flashcard_manager
         self.switch_frame_callback = switch_frame_callback
@@ -17,6 +18,9 @@ class MainFrame(tk.Frame):
         self.setup_gui()
 
     def setup_gui(self):
+
+        self.parent.title("Flashcard Quiz App")
+
         # Quiz creation section
         create_quiz_label = tk.Label(self, text="Create New Quiz:")
         create_quiz_label.grid(row=0, column=0)
