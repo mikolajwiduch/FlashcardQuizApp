@@ -36,21 +36,10 @@ class QuizFrame(tk.Frame):
         back_button.pack()
 
     def start_quiz(self):
-        try:
-            self.flashcards = self.flashcard_manager.get_flashcards_for_quiz()
-            if self.flashcards:
-                self.show_question()
-            else:
-                messagebox.showinfo("Info", "No flashcards available in this quiz.")
-        except ValueError as e:
-            messagebox.showwarning("Error", str(e))
+        self.switch_frame_callback('play', self.quiz_name)
 
     def edit_quiz(self):
         self.switch_frame_callback('edit', self.quiz_name)
 
     def back_to_main(self):
         self.switch_frame_callback('main')
-
-    def show_question(self):
-        question_display = tk.Label(self, text=f"First question: {self.flashcards[0][1]}")
-        question_display.pack()

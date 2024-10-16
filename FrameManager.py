@@ -1,6 +1,7 @@
 from MainFrame import MainFrame
 from QuizFrame import QuizFrame
 from FlashcardManagementFrame import FlashcardManagementFrame
+from QuizPlayFrame import QuizPlayFrame
 
 
 class FrameManager:
@@ -20,5 +21,7 @@ class FrameManager:
             self.current_frame = QuizFrame(self.root, self.flashcard_manager, quiz_name, self.show_frame)
         if frame_type == 'edit':
             self.current_frame = FlashcardManagementFrame(self.root, self.flashcard_manager, quiz_name, self.show_frame)
+        if frame_type == 'play':
+            self.current_frame = QuizPlayFrame(self.root, self.flashcard_manager, quiz_name, self.show_frame)
 
         self.current_frame.pack()
