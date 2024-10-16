@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="33e9eb87-9368-4a79-b69e-3e7403112f09" name="Changes" comment="Almost fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DatabaseManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/DatabaseManager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FlashcardManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardManager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuizFrame.py" beforeDir="false" afterPath="$PROJECT_DIR$/QuizFrame.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FlashcardManagementFrame.py" beforeDir="false" afterPath="$PROJECT_DIR$/FlashcardManagementFrame.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
