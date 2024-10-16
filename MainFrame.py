@@ -20,7 +20,7 @@ class MainFrame(tk.Frame):
     def setup_gui(self):
 
         self.parent.title("Flashcard Quiz App")
-        self.parent.geometry("400x300")
+        self.parent.geometry("600x400")
 
         # Quiz creation section
         create_quiz_label = tk.Label(self, text="Create New Quiz:")

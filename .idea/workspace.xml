@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="33e9eb87-9368-4a79-b69e-3e7403112f09" name="Changes" comment="some fixes">
-      <change afterPath="$PROJECT_DIR$/QuizPlayFrame.py" afterDir="false" />
+    <list default="true" id="33e9eb87-9368-4a79-b69e-3e7403112f09" name="Changes" comment="Added QuizPlayFrame.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FrameManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/FrameManager.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainFrame.py" beforeDir="false" afterPath="$PROJECT_DIR$/MainFrame.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/QuizFrame.py" beforeDir="false" afterPath="$PROJECT_DIR$/QuizFrame.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/QuizPlayFrame.py" beforeDir="false" afterPath="$PROJECT_DIR$/QuizPlayFrame.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +182,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729090317950</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added QuizPlayFrame.py">
+      <option name="closed" value="true" />
+      <created>1729094090562</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1729094090562</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -221,6 +226,7 @@
     <MESSAGE value="Almost fixed" />
     <MESSAGE value="added gui to FlashcardManagementFrame.py" />
     <MESSAGE value="some fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="some fixes" />
+    <MESSAGE value="Added QuizPlayFrame.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added QuizPlayFrame.py" />
   </component>
 </project>
