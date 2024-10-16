@@ -68,3 +68,32 @@ class DatabaseManager:
         c.execute("UPDATE flashcards SET answered_correctly = 1 WHERE id = ?", (card_id,))
         conn.commit()
         conn.close()
+
+    def delete_flashcard(self, card_id):
+        conn = sqlite3.connect(self.db_name)
+        c = conn.cursor()
+        c.execute("DELETE FROM flashcards WHERE id = ?", (card_id,))
+        conn.commit()
+        conn.close()
+
+    def edit_flashcard(self, card_id, new_question, new_answer):
+        conn = sqlite3.connect(self.db_name)
+        c = conn.cursor()
+        c.execute("UPDATE flashcards SET question = ?, answer = ? WHERE id =?", (new_question, new_answer, card_id))
+        conn.commit()
+        conn.close()
+
+    def delete_quiz(self, quiz_id):
+        conn = sqlite3.connect(self.db_name)
+        c = conn.cursor()
+        c.execute("DELETE FROM quizzes WHERE id = ?", (quiz_id,))
+        c.execute("DELETE FROM flashcards WHERE quiz_id = ?", (quiz_id,))
+        conn.commit()
+        conn.close()
+
+    def edit_quiz_name(self, quiz_id, new_name):
+        conn = sqlite3.connect(self.db_name)
+        c = conn.cursor()
+        c.execute("UPDATE quizzes SET name = ? WHERE id = ?", (new_name, quiz_id))
+        conn.commit()
+        conn.close()
